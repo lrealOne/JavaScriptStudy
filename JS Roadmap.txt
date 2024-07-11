@@ -1,0 +1,118 @@
+=> Operadores Lógicos e Matemáticos	
+     -Variáveis e Constantes     
+     -Estruturas de dados
+     -Tipos de dados
+     -Condicionais (if e else)
+     -Laços de Repetição (for e Whiles)
+
+=> DOM - Document Object Model
+     -Seletores
+     -Maninupular o CSS (através do JS)
+     -Eventos
+     -array ( map, filter, reduce, sort)
+     -Funções
+
+=> Dicas de Projetos
+     -Cronometro
+     -Lista de Tarefas
+     -Calculadora
+
+=> Programação Assíncrona
+     -Fetch
+     -Promises
+     -Async/await
+
+----------------------------------------------------------------
+
+**** Operadores:
+
+- aritméticos;
+- atribuição;
+- relacional;
+- lógicos;
+- ternário.
+
+
+Aritmeticos
+
+5 + 2 = 7
+5 - 2 = 3
+5 * 2 = 10
+5 / 2 = 2.5
+5 % 2 = 1 (resto da divisão)
+5 * 2 = 25 (potenciação)
+
+========================
+
+Ordem de precedencia 
+1= ()
+2= **
+3= * / %
+4= + -
+
+======================
+
+Atribuição
+ var n = 3
+
+ n = n+4   | n += 4
+ n = n-4   | n -= 4
+ n = n*4   | n *= 4
+ n = n/2   | n /= 2     
+ n = n**2  | n **= 2
+ n = n%5   | n %= 5
+
+***Incremento
+
+ n=n+1  |  n++
+ n=n-1  |  n--
+=======================
+
+Relacionais
+
+ 2 >  2   false
+ 3 <  6   true
+ 4 >= 7   false
+ 5 <= 8   true
+ 6 == 6   true
+ 7 != 20  true
+---------------
+identidade
+
+ 5 == 5 = t
+ 5 == '5' = t (iguais, mesmo valor)
+ 5 === '5' = f (identicos, mesmo valor e tipo)
+
+
+=======================
+
+Logicos 
+
+! negação      ( not )
+&& conjunção   ( and )
+|| disjunção   ( or )
+
+=======================
+
+Ternario 
+
+? positivo (true)
+! negativo (false)
+
+=======================
+
+*** DOM Document Object Model
+
+- Interface de programação para HTML;
+- Temos metodos para acessar a arvore de elementos;
+- Fornece uma cópia do HTML;
+- Manipulamos eventos pelo DOM para afetar o HTML.
+------------------------
+
+ DOM, acessando...
+
+//tag
+var nomeDaVariavel = document.getElementsByTagName ('h1') -> Exemplo de tag HTML
+
+
+
