@@ -1,10 +1,9 @@
 => Operadores
      (Lógicos e matematicos == 028, 103)
-     -Variáveis e Constantes     
-     (Estruturas de dados == 169, 000)
-     -Tipos de dados
+     Constantes     
+     (Arrays == 169, 199)
      (Condicionais == 103, 164)  
-     -Laços de Repetição (for e Whiles)
+     (Laços de Repetição (for e Whiles) == 201, 
 
 => DOM - Document Object Model
      -Seletores
@@ -190,11 +189,39 @@ var resultado = array1.concat(array2).concat(array3) => mescla os arrays na orde
 
 ([...array1, array2]) => outra maneira de mesclar
 
+------------------------------------------
+|  var jogador = [ 'erre', 2000, 'elfo'];|
+|                                        |
+|  var [name, nivel, classe] = jogador;  |
+------------------------------------------
 
+==========================================
 
+laços de repetição (while & for)
 
+sintaxes 
+     while
+var contador = 0;
+     while(contador < 5){
+          console.log(contador);
+          ++contador;
+     }
+}
 
+     for
+for (var cont = 0; cont <= 10; cont++){
+     console.log(cont)
+}
 
+-----------------------------------------
+
+diference between continue and break
+
+break quebra o loop por completo
+
+continue ignora o restante do codigo e volta para o loop.
+
+-----------------------------------------
 
 
 
