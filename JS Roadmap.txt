@@ -1,8 +1,9 @@
-=> Operadores Lógicos e Matemáticos	
+=> Operadores
+     (Lógicos e matematicos == 028, 103)
      -Variáveis e Constantes     
-     -Estruturas de dados
+     (Estruturas de dados == 169, 000)
      -Tipos de dados
-     -Condicionais (if e else)
+     (Condicionais == 103, 164)  
      -Laços de Repetição (for e Whiles)
 
 => DOM - Document Object Model
@@ -100,6 +101,132 @@ Ternario
 ! negativo (false)
 
 =======================
+sintaxes**
+
+Condicionais 
+
+if, else if and else
+
+if (condição) {
+     ação;
+} else if (condição) {
+     ação;
+} else {
+     ação;
+}
+-------------------------------
+
+if simplificado (ternario):
+
+console.log(true ? 'caso positivo' ! 'caso negativo')
+
+exemplo:
+
+var idade = 21;
+
+console.log(idade >= 18 ? 'maior de idade' ! 'menor de idade');
+
+============================================
+
+switch case 
+
+switch(nomeDaVariavel) {
+     case 'caso 1':
+          console.log('execute caso 1);
+          break;
+     
+     case 'caso 2':
+          console.log('executa caso 2');
+          break;
+     
+     default:
+          console.log('Caso nenhum dos cases tenha sido encontrado');
+          break;
+}
+
+multicase:
+
+switch(nomeDaVariavel) {
+     case 'caso 1':
+     case 'case 2':
+     case 'case 3':
+          console.log('execute caso 1);
+          break;
+     
+     case 'caso 4':
+     case 'caso 5':
+     case 'caso 6':
+          console.log('executa caso 2');
+          break;
+     
+     default:
+          console.log('Caso nenhum dos cases tenha sido encontrado');
+          break;
+}
+
+========================================
+
+Array (listas)
+
+var nome_do_array = [2, 3, 5, 6, 7, 'pessoa', true]
+
+(nome_do_array[index]) => acessa index definido
+
+(nome_do_array.lenght) => retorna a qtd de itens no array
+
+(nome_do_array.pop) => retorna o ultimo item da lista [-1]
+
+(nome_do_array.slice(primeiro indice, fim do intervalo + 1)) => o pedaço do intervalo 
+
+(nome_do_array.join('caractere')) => separa os itens pelo caractere escolhido
+
+(nome_do_array.push(valor)) => adiciona valor selecionado no fim da lista [-1]
+
+(nome_do_array.includes(valor)) => retorna se o valor esta na lista (true, false)
+
+(nome_do_array.indexof(valor)) => retorna o index do valor, caso não esteja na lista retorna -1
+
+var resultado = array1.concat(array2).concat(array3) => mescla os arrays na ordem
+
+([...array1, array2]) => outra maneira de mesclar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 *** DOM Document Object Model
 
@@ -109,10 +236,6 @@ Ternario
 - Manipulamos eventos pelo DOM para afetar o HTML.
 ------------------------
 
- DOM, acessando...
-
-//tag
-var nomeDaVariavel = document.getElementsByTagName ('h1') -> Exemplo de tag HTML
-
+ 
 
 
