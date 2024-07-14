@@ -12,9 +12,16 @@
 //     }
 //     ++contador;
 
-let i = 10
-let o = 9
+// let i = 10
+// let o = 9
 
-if (!i == o){
-    console.log('Opaaaa')
+// if (!i == o){
+//     console.log('Opaaaa')
+// }
+
+for(i = 0; i <= 5; i++){
+    for(j = 5; j <= 10; j++){
+        console.log(j)
+    }
+    console.log(j, i) 
 }
