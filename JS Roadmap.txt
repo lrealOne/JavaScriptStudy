@@ -1,9 +1,18 @@
+Olá, me chamo Luan e estou estudando JavaScript por influenia de amigos.
+
+Tenho conhecimentos em py, java poo, MySQL alem do HTML e CSS.
+
+Espero que as anotações possam te ajudar a prosperar na linguagem, assim como eu.
+
+
 => Operadores
      (Lógicos e matematicos == 028, 103)
+     (functions pt01 == 243, 292)
+     (Objects pt01 == 294, )
      Constantes     
      (Arrays == 169, 199)
      (Condicionais == 103, 164)  
-     (Laços de Repetição (for e Whiles) == 201, 
+     (Laços de Repetição (for e Whiles) == 201, 232)
 
 => DOM - Document Object Model
      -Seletores
@@ -217,17 +226,75 @@ for (var cont = 0; cont <= 10; cont++){
 
 diference between continue and break
 
-break quebra o loop por completo
+break sai do loop
 
-continue ignora o restante do codigo e volta para o loop.
+continue ignora o restante do codigo e volta para o loop principal.
 
 -----------------------------------------
 
+outro jeito de utilizar o for é:
+array = ['Luan', 1, 2, 4, 32]
+for (var variavel of array){
+     console.log('for of', variavel)
+}
 
+^ assim o for vai transformar a variavel a cada indice que passar por ele.
+===========================================
 
+functions pt 01
 
+é usado para armazenar trecho de código que pode ser chamado atraves de seu nome.
 
+function nome_da_function(parametro => opcional) {
+     ação;
+}
 
+function escrevaMensagem(mensagem){
+     console.log(mensagem);
+}
+escrevaMensagem('mensagem que deseja imprimir');
+-----------------------------------
+
+**parametro rest 
+
+function nome(parametro1, parametro 2, ... parametro3){
+     ...;
+} ==> assim a função exigirá 2 parametros, os demais dados pelo usuario
+serao armazenados no array parametro3.
+
+------------------------------------
+
+function autoexecutavel
+
+(function autoExecuta(nome){
+     console.log('Executei', nome);
+}('Luan'))
+
+------------------------------------
+
+função anonima 
+
+var funcao_anonima = function (a, b){
+     return a + b;
+};
+
+-------------------------------------
+
+callback functions 
+
+function nomeFuncao(parametro, cb){
+    cb(parametro);
+}
+
+function nomeParametro(nome){
+    console.log(nome, ' é seu nome');
+}
+
+nomeFuncao('Luan', nomeParametro);
+
+======================================
+
+Objects pt01
 
 
 

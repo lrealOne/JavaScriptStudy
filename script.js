@@ -19,9 +19,53 @@
 //     console.log('Opaaaa')
 // }
 
-for(i = 0; i <= 5; i++){
-    for(j = 5; j <= 10; j++){
-        console.log(j)
-    }
-    console.log(j, i) 
+// for(i = 0; i <= 5; i++){
+//     for(j = 5; j <= 10; j++){
+        
+//     }
+//     console.log(j, i) 
+// }
+
+// for (var i= 0; i <= 50; i++){
+//     if (i % 2 === 0 && i % 3 === 0){
+//         console.log(i, 'tiktok');
+//     }else if(i % 2 === 0){
+//         console.log(i, 'tik');
+//     }else if (i % 3 === 0) {
+//         console.log(i, 'tok')
+//     }
+// }
+
+// function soma(lista){
+//     let final = 0;
+//     for (let p = 0; p < lista.lenth; p++){
+//         final = final + lista[p];
+//     }
+//     return final;
+// }
+
+// const numberlist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// console.log(soma(numberlist));
+
+// cbfunction
+
+// const setAge = (age, cb) => {
+//     cb(age);
+//   };
+  
+// function showName(nome) {
+//     console.log("nome: ", nome);
+// }
+  
+// setAge('Luan', showName);
+
+function nomeFuncao(parametro, cb){
+    cb(parametro);
 }
+
+function nomeParametro(nome){
+    console.log(nome, ' é seu nome');
+}
+
+nomeFuncao('Luan', nomeParametro);
