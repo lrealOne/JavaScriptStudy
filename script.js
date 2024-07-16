@@ -60,12 +60,47 @@
   
 // setAge('Luan', showName);
 
-function nomeFuncao(parametro, cb){
-    cb(parametro);
-}
+// function nomeFuncao(parametro, cb){
+//     cb(parametro);
+// }
 
-function nomeParametro(nome){
-    console.log(nome, ' é seu nome');
-}
+// function nomeParametro(nome){
+//     console.log(nome, ' é seu nome');
+// }
 
-nomeFuncao('Luan', nomeParametro);
+// nomeFuncao('Luan', nomeParametro);
+let employees = [
+    {
+        name: 'Luan',
+        recharge:'CTO'
+    },
+    {
+        name: 'Rafael',
+        recharge:'Homeless'
+    },
+    {
+        name: 'Ana Julia',
+        recharge:'CEO'
+    },
+];
+
+let alter =  {
+    position: 0,
+    get currentPosition(){
+        return employees[this.position];
+    },
+    set currentPosition(position){
+        this.position = position;
+    },
+    nextPosition(){
+        ++this.position;
+    },
+    prevPosition(){
+        --this.position;
+    }
+};   
+
+
+alter.currentPosition = 2;
+console.log(alter.currentPosition)
+    

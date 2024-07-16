@@ -5,14 +5,15 @@ Tenho conhecimentos em py, java poo, MySQL alem do HTML e CSS.
 Espero que as anotações possam te ajudar a prosperar na linguagem, assim como eu.
 
 
-=> Operadores
-     (Lógicos e matematicos == 028, 103)
+=> Introdução
+     (Operadores Lógicos e matematicos == 028, 103)
      (functions pt01 == 243, 292)
-     (Objects pt01 == 294, )
+     (Objects pt01 == 294, 322)
+     (Objects _getters and _setters == 324, )
      Constantes     
      (Arrays == 169, 199)
      (Condicionais == 103, 164)  
-     (Laços de Repetição (for e Whiles) == 201, 232)
+     (Laços de Repetição (for e while) == 201, 232)
 
 => DOM - Document Object Model
      -Seletores
@@ -296,9 +297,33 @@ nomeFuncao('Luan', nomeParametro);
 
 Objects pt01
 
+é um tipo de dado que armazena atributos;
+
+const objeto = {
+     nome: 'Luan',
+     idade: 21, 
+     profissao: ti;
+}
 
 
+console.log(objeto.nome) ==> chama a propriedade solicitada.
 
+objeto.novaPropriedade = valor ==> adiciona propriedades ao objeto:
+
+delete objeto.propriedade; ==> deleta a propriedade selecionada.
+
+
+Objeto.assign({}, nomeObjeto01, nomeObjeto02); 
+&&
+var novoObjeto = {
+     ...nomeObjeto01,
+     ...nomeObjeto02
+} 
+==> as duas maneiras juntam objetos;
+
+=========================================
+
+_getters and _setters 
 
 
 
