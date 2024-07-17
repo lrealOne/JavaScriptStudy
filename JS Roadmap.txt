@@ -325,10 +325,25 @@ var novoObjeto = {
 
 _getters and _setters 
 
+get é usado para retornar valores quando não se tem args
+set é usado para alocar valores
 
+=========================================
 
+var {atributo ou atribito: novo_nome} = nomeObjeto; ==> cria uma variavel baseando-se 
+no atributo do objeto.
 
+caso o objeto extenda outro objeto, usamos:
 
+var {nomeObjetoFilho: { atributo }} = nomeObjetoPai;
+
+pode usar o arg default utilizando: 
+
+var {nomeObjetoFilho: { atributo = valor default }} = nomeObjetoPai;
+
+Object.keys(nomeObjeto) => retorna em um array todos os atributos do meu objeto
+
+Object.values(nomeObjeto) => retorna apenas os valores do objeto.
 
 
 

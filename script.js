@@ -69,38 +69,49 @@
 // }
 
 // nomeFuncao('Luan', nomeParametro);
-let employees = [
-    {
-        name: 'Luan',
-        recharge:'CTO'
-    },
-    {
-        name: 'Rafael',
-        recharge:'Homeless'
-    },
-    {
-        name: 'Ana Julia',
-        recharge:'CEO'
-    },
-];
 
-let alter =  {
-    position: 0,
-    get currentPosition(){
-        return employees[this.position];
-    },
-    set currentPosition(position){
-        this.position = position;
-    },
-    nextPosition(){
-        ++this.position;
-    },
-    prevPosition(){
-        --this.position;
-    }
-};   
+// get and set
+// let employees = [
+//     {
+//         name: 'Luan',
+//         recharge:'CTO'
+//     },
+//     {
+//         name: 'Rafael',
+//         recharge:'Homeless'
+//     },
+//     {
+//         name: 'Ana Julia',
+//         recharge:'CEO'
+//     },
+// ];
+
+// let alter =  {
+//     position: 0,
+//     get currentPosition(){
+//         return employees[this.position];
+//     },
+//     set currentPosition(position){
+//         this.position = position;
+//     },
+//     nextPosition(){
+//         ++this.position;
+//     },
+//     prevPosition(){
+//         --this.position;
+//     }
+// };   
 
 
-alter.currentPosition = 2;
-console.log(alter.currentPosition)
+// alter.currentPosition = 2;
+// console.log(alter.currentPosition)
     
+let userFunction = {
+    name: 'Luan',
+    age: 21,
+    sex: 'M',
+    flag: 'Brazil'
+}
+
+let props = Object.keys(userFunction);
+console.log(props);
