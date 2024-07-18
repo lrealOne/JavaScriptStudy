@@ -8,8 +8,8 @@ Espero que as anotações possam te ajudar a prosperar na linguagem, assim como 
 => Introdução
      (Operadores Lógicos e matematicos == 028, 103)
      (functions pt01 == 243, 292)
-     (Objects pt01 == 294, 322)
-     (Objects _getters and _setters == 324, )
+     (functions pt02 == 350, 402)
+     (Objects pt01 == 294, 348)
      Constantes     
      (Arrays == 169, 199)
      (Condicionais == 103, 164)  
@@ -345,8 +345,63 @@ Object.keys(nomeObjeto) => retorna em um array todos os atributos do meu objeto
 
 Object.values(nomeObjeto) => retorna apenas os valores do objeto.
 
+=======================================
 
+Functions part02
 
+this 
+
+representa o escopo do objeto atual 
+
+ex: se chamar this fora do objeto retorna o objeto maior (navegador)
+caso esteja em um objeto, retornará sua prop;
+-------------------------
+this
+this aponta para o contexto onde uma função está sendo executada. 
+-------------------------
+new 
+permite escrever funções criadoras de objectos de forma mais simples
+-------------------------
+call
+quando invoca a function diz qual objeto o this estará.
+
+ex call:
+
+function personagem(p1, p2, p3) {
+     c.l(this);
+}
+
+let luanPersonagem = {
+     nome: 'Luan';
+}
+
+personagem.call(luanPersonagem, p1, p2, p3);
+-------------------------
+apply
+
+igual o call, muda somente a maneira de se passar os parametros
+
+ex de apply
+personagem.apply(luanPersonagem,[ p1, p2, p3]);
+-------------------------
+bind 
+
+ele nao invoca a função, ele apenas define os parametros.
+
+utilidade:
+
+let pers = personagem.bind(luanPersonagem, p1, p2, p3);
+-------------------------
+arrow functions
+
+Em termos simples, uma arrow function é uma forma concisa de escrever uma função em JavaScript
+
+let nomeFuncao = () => {
+     retorno;
+}
+
+//arrow function nao respondem ao comando call//
+-------------------------
 
 
 

@@ -115,3 +115,20 @@ let userFunction = {
 
 let props = Object.keys(userFunction);
 console.log(props);
+
+// for (let i = 0; i < props.length; i++){
+//     console.log(userFunction[props[i]], i);
+// };
+
+// for of
+
+// for (let prop of props) {
+//     console.log(prop)
+// }
+
+// for (let prop2 in userFunction){
+//     console.log(userFunction[prop2])
+// }
+
+
+
