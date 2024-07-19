@@ -9,6 +9,7 @@ Espero que as anotações possam te ajudar a prosperar na linguagem, assim como 
      (Operadores Lógicos e matematicos == 028, 103)
      (functions pt01 == 243, 292)
      (functions pt02 == 350, 402)
+     (Closures == 407, )
      (Objects pt01 == 294, 348)
      Constantes     
      (Arrays == 169, 199)
@@ -403,9 +404,28 @@ let nomeFuncao = () => {
 //arrow function nao respondem ao comando call//
 -------------------------
 
+Closure
 
+é uma função capaz de "lembrar" e acessar seu escopo léxico mesmo quando ela está sendo executada fora de seu escopo léxico
 
+exemplo: 
 
+const pessoa = () => {
+     let impostoDeRenda = (valor) => {
+          return valor * 0.25;
+     }
+
+     let analistaPleno = () => {
+          let salario = 4320;
+          return impostoDeRenda(salario);
+     };
+
+     let analistaSenior = () => {
+          let salario = 7682;
+          return impostoDeRenda(salario);
+     }
+
+}
 
 
 

@@ -106,15 +106,15 @@
 // alter.currentPosition = 2;
 // console.log(alter.currentPosition)
     
-let userFunction = {
-    name: 'Luan',
-    age: 21,
-    sex: 'M',
-    flag: 'Brazil'
-}
+// let userFunction = {
+//     name: 'Luan',
+//     age: 21,
+//     sex: 'M',
+//     flag: 'Brazil'
+// }
 
-let props = Object.keys(userFunction);
-console.log(props);
+// let props = Object.keys(userFunction);
+// console.log(props);
 
 // for (let i = 0; i < props.length; i++){
 //     console.log(userFunction[props[i]], i);
@@ -131,4 +131,21 @@ console.log(props);
 // }
 
 
+const pessoa = () => {
+    let impostoDeRenda = (valor) => {
+        return .25 * valor;
+    }
 
+    const calcImpostoanalista01 = () => {
+        let salario = 4320;
+        return impostoDeRenda(salario);
+    };
+
+    const calcImpostoanalista02 = () => {
+        let salario = 7682;
+        return impostoDeRenda(salario);
+    }
+
+}
+
+console.log(calcImpostoanalista02());
