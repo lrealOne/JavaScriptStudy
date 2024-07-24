@@ -9,12 +9,13 @@ Espero que as anotações possam te ajudar a prosperar na linguagem, assim como 
      (Operadores Lógicos e matematicos == 028, 103)
      (functions pt01 == 243, 292)
      (functions pt02 == 350, 402)
-     (Closures == 407, )
-     (Objects pt01 == 294, 348)
-     Constantes     
+     (Closures == 407, 429)
+     (Objects pt01 == 294, 348)     
      (Arrays == 169, 199)
      (Condicionais == 103, 164)  
      (Laços de Repetição (for e while) == 201, 232)
+     (map, filter e reduce (431, 500))
+     (metodos (501, ))
 
 => DOM - Document Object Model
      -Seletores
@@ -427,12 +428,77 @@ const pessoa = () => {
 
 }
 
+===================================
 
+metodos map, filter and reduce
 
+map 
 
+serve para mapear elementos de um array.
 
+sintaxe:
 
+arrayOriginal.map(callback).
 
+parametros:
+
+callback é uma função que sera executada para cada elemento no vetor original e irá retornar o mesmo com base em uma logica, que será o item equivalente no vetor resultante. segue:
+
+function(valorAtual, index, array);
+
+valorAtual (obrigatorio): representa o proprio tem da iteração atual (esse parametro recebe cada item que passa pelo map);
+
+index (opcional): representa o indice "[]" do item da iteração;
+
+array (opcional): representa o array a qual os itens pertencem.
+
+arrayBase = ["Luan", "Ana J", "Caio"];
+
+const arrayMap = arrayBase.map(nome => 
+     return nome.toLowerCase();
+});
+
+retornará os nomes em minusculo;
+
+--------------------------------------
+
+filter  
+
+filtra o array para encontrar um valor de referencia passado por meio de uma function callback, ele retorna os elementos em que a referencia retorna True;
+
+sintaxe: 
+
+const arrayBase = [2, 3, 4, 5, 6, 7, 8];
+
+const yourFilter = arrayBase.filter(numero => numero % 2 === 0;)
+
+ele retornará: [2, 4, 6, 8]; => valores que correspondem ao parametro.
+
+---------------------------------------
+
+map and filter 2gueter
+
+const arrayBase = [2, 3, 4, 5, 6, 7, 8];
+
+const mapFilter = arrayBase
+     .filter(numero => numero % 2 === 0)
+     .map(numero => numero * 2);
+
+retornará todos os numeros que retornarem true no filter e depois os multiplicará por 2.
+
+----------------------------------------
+
+reduce 
+
+serve para agruparmos valores a um valor de inicio.
+
+const myArray = [1, 2, 3, 4, 5, 6, 7];
+
+const newArray = myArray.reduce(function(total, numero){
+     return total + numero;
+}, 0);=> estamos dizendo que o total começa em 0.
+
+=========================================
 
 
 

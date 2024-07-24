@@ -131,21 +131,79 @@
 // }
 
 
-const pessoa = () => {
-    let impostoDeRenda = (valor) => {
-        return .25 * valor;
-    }
+// let pessoa = () => {
+//     let impostoDeRenda = (valor) => {
+//         return .25 * valor;
+//     }
 
-    const calcImpostoanalista01 = () => {
-        let salario = 4320;
-        return impostoDeRenda(salario);
-    };
+//     const calcImpostoanalista01 = () => {
+//         let salario = 4320;
+//         return impostoDeRenda(salario);
+//     };
 
-    const calcImpostoanalista02 = () => {
-        let salario = 7682;
-        return impostoDeRenda(salario);
-    }
+//     const calcImpostoanalista02 = () => {
+//         let salario = 7682;
+//         return impostoDeRenda(salario);
+//     }
 
-}
+// }
 
-console.log(calcImpostoanalista02());
+// let funcionario = pessoa();
+// console.log(funcionario.calcImpostoanalista02);
+
+// const meuArray = ["Luan", "Ana", "caio", "lorena"];
+
+// const upperCaseNames = meuArray.filter(nome => nome[0].charAt() === nome[0].charAt(0).toUpperCase());
+
+// console.log(upperCaseNames)
+
+const persons = [
+    {
+        nome: "Luan",
+        age: 21,
+        salario: 10000,
+    },
+    {
+        nome: "Ana Julia",
+        age: 21,
+        salario: 10,
+    },
+    {
+        nome: "Rafael",
+        age: 21,
+        salario: 20,
+    },
+    {
+        nome: "Larissa",
+        age: 21,
+        salario: 1,
+    },
+    {
+        nome: "Caio",
+        age: 21,
+        salario: 10,
+    },
+    {
+        nome: "Lorena",
+        age: 21,
+        salario: 100,
+    },
+]
+
+// const maioridade = persons.reduce(function(valorAcumulativo, valorArray) {
+//     let maiorOuMenor = valorArray.age >= 18 ? "maiores" : "menores";
+//     valorAcumulativo[maiorOuMenor].push(valorArray);
+//     return valorAcumulativo;
+// }, {maiores: [], menores:[]})
+ 
+
+const salarioAlto = persons.reduce(function(cash, salarioAtual){
+    let calculo = salarioAtual.salario >= 100 ? "ricos" : "ferrados";
+
+    cash[calculo].push(salarioAtual);
+    return cash;
+
+
+}, {ricos:[], ferrados:[]})
+
+console.log(salarioAlto)
